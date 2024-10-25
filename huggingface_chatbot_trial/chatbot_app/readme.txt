@@ -82,3 +82,8 @@ curl -X POST "http://127.0.0.1:8000/chat" -H "Content-Type: application/json" -d
 
 
 
+F. To verify the app
+===============
+Open browser and browse to : http://localhost/index.html
+
+there is your chatbot
