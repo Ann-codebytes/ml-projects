@@ -44,11 +44,14 @@ async def sentiment(request: SentimentRequest):
         # Tokenize and predict
         inputs = tokenizer(text, return_tensors='pt')
         outputs = model(**inputs)
-        print(outputs)
+        print(f"Output {outputs}")
+        print(f"Output logits {outputs.logits}")
         # Get probabilities
         probabilities = F.softmax(outputs.logits, dim=1)
+        print(f"Probabilities {probabilities}")
         confidence, predicted_class = torch.max(probabilities, dim=1)
-
+        print(f"Confidence {confidence}")
+        print(f"Predicted Class {predicted_class}")
         # Determine sentiment
         sentiment = 'positive' if predicted_class.item() == 1 else 'negative'
         result = SentimentResponse(
