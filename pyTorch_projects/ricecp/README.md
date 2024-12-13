@@ -1,0 +1,1 @@
+Experiments on https://www.kaggle.com/datasets/thegoanpanda/rice-crop-diseases

@@ -1,0 +1,1 @@
+Experiment on torchvision.datasets.CIFAR10 to classify images into the 10 possible classes

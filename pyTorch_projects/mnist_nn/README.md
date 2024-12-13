@@ -1,0 +1,1 @@
+Experiment on torchvision.datasets.MNIST to classify handwritten number images into the 10 possible classes
